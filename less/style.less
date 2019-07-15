@@ -127,14 +127,20 @@ h1, h2, h3, h4, h5, h6, a, ul, li, p, div, span {
   .flex-row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .card {
     width: 22%;
+    min-width: 200px;
+    margin-bottom: 20px;
+
     .card-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
       .icon {
-        float: left;
         background-color: @primary;
         border-radius: 50%;
         padding: 15px 0;
@@ -147,17 +153,12 @@ h1, h2, h3, h4, h5, h6, a, ul, li, p, div, span {
         }
       }
       h3 {
-        float: left;
         padding-top: 10px;
         padding-left: 20px;
         width: 80%;
         text-transform: uppercase;
         font-weight: bold;
-        
       }
-
-      .clearfix();
-
       
     }
     .card-text {
@@ -175,4 +176,101 @@ h1, h2, h3, h4, h5, h6, a, ul, li, p, div, span {
       vertical-align: middle;
     }
   }
+}
+
+.about {
+  padding: 30px 0;
+
+  .about-title {
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-left: 30px;
+    }
+  }
+  
+  .far, .fas {
+    font-size: 1.5rem;
+    color: @primary;
+  }
+
+  .latest-works-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+    padding-bottom: 10px;
+
+    
+    .latest-works-arrows {
+      
+      .arrow {
+        display: inline-block;
+        padding: 10px 0;
+        border-radius: 50%;
+        width: 40px;
+        background-color: @primary;
+        text-align: center;
+        cursor: pointer;
+
+        span {
+          color: #ffffff;
+        }
+      }
+    }
+
+  }
+
+  .latest-works-slider {
+    overflow-x: hidden;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+
+    .slide-strip {
+      width: 40000px;
+      margin-top: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      
+      .latest-work-slide {
+        width: 240px;
+        padding: 80px 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 20px;
+        margin-left: 20px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .about-sections {
+    margin-top: 20px;
+    .flex-wrap {
+      display: flex;
+      
+      .testimonial-block {
+        width: 46%;
+
+        .testimonial-text {
+          padding: 20px 0;
+        }
+      }
+
+      .our-clients-block {
+
+      }
+    }
+  }
+  
 }
