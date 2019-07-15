@@ -3,3 +3,147 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+p,
+div,
+span {
+  font-weight: normal;
+  text-decoration: none;
+  color: #000000;
+  list-style-type: none;
+}
+.container {
+  width: 70%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.main-header {
+  background-color: #e8ebf1;
+}
+.main-header .flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0;
+  flex-wrap: wrap;
+}
+.main-header .flex-row .brand-logo {
+  width: 15%;
+  min-width: 150px;
+  font-size: 3.574rem;
+}
+.main-header .flex-row .brand-logo span {
+  color: #2aacc8;
+}
+.main-header .flex-row .navbar {
+  width: 64%;
+}
+.main-header .flex-row .navbar .navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main-header .flex-row .navbar .navbar-menu li a {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  border-top: 3px solid rgba(0, 0, 0, 0);
+}
+.main-header .flex-row .navbar .navbar-menu li a:hover {
+  background: #ffffff;
+  border-top-color: #2aacc8;
+}
+.slider {
+  background-color: #81e4ed;
+  padding: 15px 0 10px;
+}
+.slider .slider-block {
+  background-image: url('../img/slider-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 60px;
+}
+.slider .slider-block h2 {
+  width: 30%;
+  font-size: 3.574rem;
+  color: #ffffff;
+}
+.slider .switchers {
+  margin-top: 10px;
+  text-align: center;
+}
+.slider .switchers .switcher {
+  display: inline-block;
+  min-height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.281);
+  margin-right: 10px;
+}
+.slider .switchers .switcher.active {
+  background-color: #ffffff;
+}
+.activities-cards {
+  padding: 55px 0;
+  background-color: #e8ebf1;
+}
+.activities-cards .flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+.activities-cards .card {
+  width: 22%;
+}
+.activities-cards .card .card-title .icon {
+  float: left;
+  background-color: #2aacc8;
+  border-radius: 50%;
+  padding: 15px 0;
+  width: 45px;
+  text-align: center;
+}
+.activities-cards .card .card-title .icon .fas,
+.activities-cards .card .card-title .icon .fab {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+.activities-cards .card .card-title h3 {
+  float: left;
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 80%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.activities-cards .card .card-title:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+.activities-cards .card .card-text {
+  padding: 20px 0;
+  line-height: 150%;
+}
+.activities-cards .card .fas {
+  vertical-align: middle;
+}
+.activities-cards .card .card-link {
+  margin-left: 10px;
+  color: #2aacc8;
+  vertical-align: middle;
+}
